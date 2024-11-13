@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Swiper Customization */
+.testimonials-slider {
+  padding-bottom: 3rem !important;
+}
+
+.testimonials-slider .swiper-pagination-bullet {
+  background: #03E5DF;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+}
+
+.testimonials-slider .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #03E5DF;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
